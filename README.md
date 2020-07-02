@@ -1,6 +1,6 @@
-# ipyvue-time-series
+# ipyvue-remote-component
 
-Real-Time Data Plotting in Jupyter
+Load Vue components for ipyvue at runtime with vue-remote-component.
 
 ## Installation
 
@@ -8,8 +8,8 @@ Real-Time Data Plotting in Jupyter
 
 Install with pip:
 
-    $ pip install ipyvue_time_series
-    $ jupyter nbextension enable --py --sys-prefix ipyvue_time_series
+    $ pip install ipyvue_remote_component
+    $ jupyter nbextension enable --py --sys-prefix ipyvue_remote_component
 
 ### Jupyter Lab
 
@@ -19,8 +19,8 @@ Make sure that you have the `@jupyter-widgets/jupyterlab-manager` installed:
 
 Install with pip:
 
-    $ pip install ipyvue_time_series
-    $ jupyter labextension install ipyvue_time_series
+    $ pip install ipyvue_remote_component
+    $ jupyter labextension install ipyvue_remote_component
 
 ### Development with the Jupyter Notebook
 
@@ -36,8 +36,8 @@ Then, install with pip:
 
 Enable the extension:
 
-    $ jupyter nbextension install --py --symlink --sys-prefix ipyvue_time_series
-    $ jupyter nbextension enable --py --sys-prefix ipyvue_time_series
+    $ jupyter nbextension install --py --symlink --sys-prefix ipyvue_remote_component
+    $ jupyter nbextension enable --py --sys-prefix ipyvue_remote_component
 
 The Python bits should now update automatically when you restart the kernel, to
 update the JavaScript, run `yarn build notebook` again, or `yarn build notebook

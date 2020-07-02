@@ -1,34 +1,31 @@
 from setuptools import setup
-import os.path
 
 setup(**{
-    'name': 'ipyvue_time_series',
+    'name': 'ipyvue_remote_component',
     'version': '0.1.0',
-    'description': 'Real-Time Data Plotting in Jupyter',
-    'long_description': 'Real-Time Data Plotting in Jupyter',
+    'description': 'Load Vue Components for ipyvue at Runtime',
+    'long_description': 'Load Vue Components for ipyvue at Runtime',
     'include_package_data': True,
     'data_files': [
-        ('share/jupyter/nbextensions/ipyvue-time-series', [
+        ('share/jupyter/nbextensions/ipyvue-remote-component', [
             'generated/notebook/javascript/extension.js',
             'generated/notebook/javascript/widget.js',
             'generated/notebook/javascript/widget.js.map',
         ],),
-        ('etc/jupyter/nbconfig/notebook.d' ,['assets/notebook/ipyvue-time-series.json'])
+        ('etc/jupyter/nbconfig/notebook.d' ,['assets/notebook/ipyvue-remote-component.json'])
     ],
     'install_requires': [
-        'ipywidgets>=7.0.0',
+        'ipyvue',
     ],
-    'packages': ['ipyvue_time_series'],
+    'packages': ['ipyvue_remote_component'],
     'zip_safe': False,
     'author': 'Julian Rüth',
     'author_email': 'julian.rueth@fsfe.org',
-    'url': 'https://github.com/saraedum/ipyvue-time-series',
+    'url': 'https://github.com/saraedum/ipyvue-remote-component',
     'keywords': [
         'ipython',
         'jupyter',
         'widgets',
-        'plotly',
-        'timeseries',
         'vue',
     ],
     'classifiers': [
@@ -36,7 +33,6 @@ setup(**{
         'Framework :: IPython',
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
-        'Topic :: Multimedia :: Graphics',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',

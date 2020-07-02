@@ -7,7 +7,7 @@ const setup = {
     // some configuration for requirejs, and provides the legacy
     // "load_ipython_extension" function which is required for any notebook
     // extension.
-    entry: './ipyvue-time-series/notebook/setup.js',
+    entry: './ipyvue-remote-component/notebook/setup.js',
     output: {
         filename: 'extension.js',
         path: path.resolve(__dirname, '..', 'python', 'generated', 'notebook', 'javascript'),
@@ -18,7 +18,7 @@ const setup = {
 const widget = {
     // This bundle contains the implementation for the custom widget views and
     // custom widget.
-    entry: './ipyvue-time-series/notebook/widget.ts',
+    entry: './ipyvue-remote-component/notebook/widget.ts',
     output: {
         filename: 'widget.js',
         path: path.resolve(__dirname, '..', 'python', 'generated', 'notebook', 'javascript'),
@@ -38,7 +38,8 @@ const widget = {
         '@jupyter-widgets/base'
     ],
     plugins: [
-        new BundleAnalyzerPlugin({ analyzerMode: 'static' })
+        // Enable to debug bundle size
+        // new BundleAnalyzerPlugin({ analyzerMode: 'static' })
     ],
 };
 

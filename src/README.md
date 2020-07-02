@@ -1,1 +1,1 @@
-# Python Backend & TypeScript Frontend of ipyvue-time-series
+# Python Backend & TypeScript Frontend of ipyvue-remote-component

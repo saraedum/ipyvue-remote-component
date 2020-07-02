@@ -4,8 +4,8 @@ def _jupyter_nbextension_paths():
         # used when --symlink installing to determine the source of JavaScript assets
         'src': '../generated/notebook/javascript/',
         # src is linked/copied to share/jupyter/nbextensions/<dest>/
-        'dest': 'ipyvue-time-series',
+        'dest': 'ipyvue-remote-component',
         # entrypoint of the notebook extension in share/jupyter/nbextensions/
-        'require': 'ipyvue-time-series/extension'
+        'require': 'ipyvue-remote-component/extension'
     }]
 
