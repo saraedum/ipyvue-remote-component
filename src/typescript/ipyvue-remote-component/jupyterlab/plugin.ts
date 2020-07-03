@@ -1,3 +1,4 @@
+import { name } from "../../package.json";
 import activate from "../activate.ts";
 
 const plugin = {
