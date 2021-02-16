@@ -1,6 +1,6 @@
 {
   "name": "ipyvue-remote-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab",
   "author": "Julian Rüth",
   "main": "lib/index.js",
