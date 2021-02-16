@@ -4,6 +4,15 @@ ipyvue-remote-component Change Log
 
 .. current developments
 
+v1.0.1
+====================
+
+**Fixed:**
+
+* Upload a wheel to PyPI
+
+
+
 v1.0.0
 ====================
 
