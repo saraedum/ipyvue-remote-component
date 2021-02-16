@@ -1,6 +1,5 @@
-module.exports = {
-  ...require('./force-load-model.js'),
-  version: require('../package.json').version,
-}
+const plugin = require('./plugin');
 
-require('./activate.js')['activate']()
+module.exports = { ...plugin };
+
+plugin.activate();

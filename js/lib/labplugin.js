@@ -1,5 +1,5 @@
-var plugin = require('./index');
-var base = require('@jupyter-widgets/base');
+const plugin = require('./plugin');
+const base = require('@jupyter-widgets/base');
 
 module.exports = {
   id: 'ipyvue-remote-component:plugin',
@@ -9,9 +9,8 @@ module.exports = {
       widgets.registerWidget({
           name: 'ipyvue-remote-component',
           version: plugin.version,
-          exports: plugin
+          exports: plugin,
       });
   },
   autoStart: true
 };
-
