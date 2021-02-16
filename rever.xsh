@@ -26,6 +26,8 @@ $CHANGELOG_NEWS = 'news'
 $CHANGELOG_CATEGORIES = ('Added', 'Changed', 'Removed', 'Fixed')
 $PUSH_TAG_REMOTE = 'git@github.com:saraedum/ipyvue-remote-component.git'
 
+$PYPI_BUILD_COMMANDS = ['sdist', 'bdist_wheel']
+
 $GITHUB_ORG = 'saraedum'
 $GITHUB_REPO = 'ipyvue-remote-component'
 
