@@ -1,1 +1,0 @@
-from .notebook import _jupyter_nbextension_paths
