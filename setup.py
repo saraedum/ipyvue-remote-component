@@ -9,7 +9,6 @@ from jupyter_packaging import (
     install_npm,
     ensure_targets,
     combine_commands,
-    get_version,
 )
 
 
@@ -20,10 +19,7 @@ log.info('setup.py entered')
 log.info('$PATH=%s' % os.environ['PATH'])
 
 name = 'ipyvue_remote_component'
-LONG_DESCRIPTION = 'Load Vue.js Component Packages at Runtime in Jupyter Notebooks and JupyterLab'
-
-# Get ipyvue_remote_component version
-version = get_version(pjoin(name, '_version.py'))
+LONG_DESCRIPTION = 'Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab'
 
 js_dir = pjoin(here, 'js')
 
@@ -46,12 +42,13 @@ cmdclass['jsdeps'] = combine_commands(
 
 setup_args = dict(
     name=name,
-    version=version,
-    description='Load Vue.js Component Packages at Runtime in Jupyter Notebooks and JupyterLab',
+    version='1.0.0',
+    description='Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab',
     long_description=LONG_DESCRIPTION,
     include_package_data=True,
     install_requires=[
         'ipywidgets>=7.6.0',
+        'ipyvue>=1.5.0',
     ],
     packages=find_packages(),
     zip_safe=False,
@@ -67,6 +64,7 @@ setup_args = dict(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: IPython',
+        "License :: OSI Approved :: MIT License",
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Topic :: Multimedia :: Graphics',

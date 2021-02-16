@@ -1,9 +1,10 @@
 {
   "name": "ipyvue-remote-component",
   "version": "1.0.0",
-  "description": "Load Vue.js Component Packages at Runtime in Jupyter Notebooks and JupyterLab",
+  "description": "Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab",
   "author": "Julian Rüth",
   "main": "lib/index.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/saraedum/ipyvue-remote-component.git"
@@ -26,17 +27,18 @@
     "build:prod": "webpack --mode=production && yarn run build:labextension",
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
-    "watch": "webpack --watch --mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch --mode=development"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.0.0",
-    "webpack": "^5",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^5"
   },
   "dependencies": {
     "@jupyter-widgets/base": "^1.1 || ^2 || ^3 || ^4",
-    "lodash": "^4.17.4"
+    "jupyter-vue": "^1.5.0",
+    "lodash": "^4.17.4",
+    "vue-remote-component": "../../vue-remote-component/vue-remote-component"
   },
   "jupyterlab": {
     "extension": "lib/labplugin",
@@ -45,6 +47,12 @@
       "@jupyter-widgets/base": {
         "bundled": false,
         "singleton": true
+      },
+      "jupyter-vue": {
+        "bundled": false
+      },
+      "vue": {
+        "bundled": false
       }
     }
   }

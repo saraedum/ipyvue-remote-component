@@ -5,6 +5,7 @@ module.exports = {
   id: 'ipyvue-remote-component:plugin',
   requires: [base.IJupyterWidgetRegistry],
   activate: function(app, widgets) {
+      plugin.activate(app, widgets);
       widgets.registerWidget({
           name: 'ipyvue-remote-component',
           version: plugin.version,
