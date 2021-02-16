@@ -4,6 +4,17 @@ ipyvue-remote-component Change Log
 
 .. current developments
 
+v1.0.2
+====================
+
+**Fixed:**
+
+* Postpone activation in Lab until a RemoteComponent is used.
+
+* Use upstream version of vue-remote-component to show a loading indicator.
+
+
+
 v1.0.1
 ====================
 
