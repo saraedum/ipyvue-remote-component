@@ -4,6 +4,15 @@ ipyvue-remote-component Change Log
 
 .. current developments
 
+v1.1.0
+====================
+
+**Fixed:**
+
+* Upgrade vue-remote-component so we can use subresource integrity checks.
+
+
+
 v1.0.2
 ====================
 
