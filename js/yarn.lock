@@ -2395,10 +2395,10 @@ vue-property-decorator@^9.0.0:
   resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
   integrity sha512-xYA8MkZynPBGd/w5QFJ2d/NM0z/YeegMqYTphy7NJQXbZcuU6FC6AOdUAcy4SXP+YnkerC6AfH+ldg7PDk9ESQ==
 
-vue-remote-component@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/vue-remote-component/-/vue-remote-component-1.3.1.tgz#63f79eef99bb78fdc99ec261436c09f81cde8b8e"
-  integrity sha512-7JuQYb8etS6e5qKnGnkct3GTS1vHjDn6CU2zEKzeZa5SrDVky1030ao96DCGX5iGlOSMuCe7KWpaf/pyrn9YgQ==
+vue-remote-component@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/vue-remote-component/-/vue-remote-component-1.4.0.tgz#a52b331b45d0bdb40f75c85a099a5658c70dc739"
+  integrity sha512-QiavmflwXFzv8AAop5lzVUuLzmLO0f5DilLpFcQYtUlQUBIxDc9v9M9RyFwuulT+UDiDuz7gu1hGQ+rUgf7t9A==
   dependencies:
     "@babel/runtime" "^7.12.13"
     vue-class-component "^7.2.3"

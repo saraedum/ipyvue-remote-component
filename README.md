@@ -3,6 +3,16 @@ ipyvue-remote-component
 
 Load Vue.js Packages at Runtime in Jupyter Notebooks and JupyterLab
 
+:exclamation: Security
+----------------------
+
+Loading JavaScript code from untrusted sources in a notebook is a security
+risk. Malicious JavaScript code could execute arbitrary Python code on the
+machine running the notebook. Be sure to use the `integrity` attribute to only
+load code that you trust, see [subresource
+integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+on how to create the integrity hash.
+
 Installation
 ------------
 
