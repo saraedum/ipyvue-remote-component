@@ -4,6 +4,19 @@ ipyvue-remote-component Change Log
 
 .. current developments
 
+v1.1.1
+====================
+
+**Added:**
+
+* Added environment.yml file with build and release requirements for conda.
+
+**Fixed:**
+
+* Upgraded JavaScript dependencies to latest security fixes.
+
+
+
 v1.1.0
 ====================
 
