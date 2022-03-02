@@ -1,8 +1,8 @@
 from .remote_component import RemoteComponent
 
 
-version_info = (1, 1, 0)
-__version__ = "1.1.0"
+version_info = (1, 1, 1)
+__version__ = "1.1.1"
 
 
 def _jupyter_labextension_paths():
